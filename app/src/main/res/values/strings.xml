@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FriendZone</string>
+    <string name="signup_logo">Sign Up</string>
+    <string name="first_name">First_name</string>
+    <string name="last_name">Last Name</string>
+    <string name="signup_email">Email</string>
+    <string name="address">Address</string>
+    <string name="password">Password</string>
+    <string name="repassword">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="already_member">Already Registered ? Sign In</string>
+    <string name="app_name1">FriendZone</string>
+    <string name="phone">Phone No</string>
+    <string name="signin_email">Email Address</string>
+    <string name="signin">Sign In</string>
+    <string name="signinalready_member">Not Member? Sign Up</string>
+    <string name="signin_logo">Sign In</string>
+    <string name="auth_failed">Authentication failed,please check your email or password or Sign up</string>
+</resources>
