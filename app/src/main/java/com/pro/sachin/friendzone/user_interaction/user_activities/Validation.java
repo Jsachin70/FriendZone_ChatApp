@@ -1,4 +1,4 @@
-package com.pro.sachin.friendzone;
+package com.pro.sachin.friendzone.user_interaction.user_activities;
 
 import android.widget.EditText;
 

@@ -8,22 +8,25 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".user_interaction.user_activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-
-
             </intent-filter>
         </activity>
 
-        <activity android:name=".Register_user"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
-            </activity>
-        <activity android:name=".Login_user" />
+
+        <activity android:name=".user_interaction.user_activities.Register_user">
+
+        </activity>
+        <activity android:name=".user_interaction.user_activities.User_profile">
+
+        </activity>
+        <activity android:name=".user_interaction.user_activities.Login_user">
+
+        </activity>
     </application>
 
 </manifest>

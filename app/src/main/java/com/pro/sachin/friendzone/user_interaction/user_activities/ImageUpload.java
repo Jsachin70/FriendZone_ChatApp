@@ -1,4 +1,4 @@
-package com.pro.sachin.friendzone;
+package com.pro.sachin.friendzone.user_interaction.user_activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -18,6 +18,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.pro.sachin.friendzone.R;
 
 public class ImageUpload extends AppCompatActivity {
     Button chooseImg, uploadImg,captureimg;

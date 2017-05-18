@@ -1,11 +1,10 @@
-package com.pro.sachin.friendzone;
+package com.pro.sachin.friendzone.user_interaction.user_activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -16,6 +15,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.pro.sachin.friendzone.R;
 
 public class Login_user extends AppCompatActivity implements View.OnClickListener {
 
@@ -46,7 +46,7 @@ public class Login_user extends AppCompatActivity implements View.OnClickListene
 
         firebaseAuth = FirebaseAuth.getInstance();
         if (firebaseAuth.getCurrentUser() != null) {
-            startActivity(new Intent(Login_user.this, MainActivity.class));
+            startActivity(new Intent(Login_user.this, User_profile.class));
             finish();
         }
 
@@ -100,16 +100,14 @@ public class Login_user extends AppCompatActivity implements View.OnClickListene
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-                        Log.d("Register", "createUserWithEmail:onComplete:" + task.isSuccessful());
-
                         if (task.isSuccessful()) {
                             Toast.makeText(Login_user.this, "Login Successfull",
 
                                     Toast.LENGTH_SHORT).show();
 
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                            Intent intent = new Intent(Login_user.this,ImageUpload.class);
-                            startActivity(intent);
+
+
                             finish();
 
                         }
